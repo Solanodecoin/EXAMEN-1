@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Dancing Script;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: space mono;
+    src: url(../fonts/SpaceMono-Regular.ttf);
+}
+
+
+
+* {box-sizing: border-box;}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242, 242, 242);
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("../img/spinning-record-player-with-vintage-vinyl.jpg ");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.containernav {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  left: 1000px;
+  bottom: 60px;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: white;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+   
+  }
+  
+  
+  .container {
+    padding: 2px 16px;
+    width: 200px;
+
+    
+    
+  }
+  #hero-text{
+    position: relative;
+    top: 170px;
+    left: 150px;
+    font-family: Dancing Script;
+    font-size: 50px;
+    color: rgb(217, 115, 115);
+
+  }
+#introduccion{
+    font-family: space mono;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 40px;
+
+}
+#pioneros{
+    display: flex;
+    background-color: rgb(217, 115, 115);
+    background-position: 100%;
+    font-family: space mono
+    
+    
+    
+}
+#video{
+    margin-top: 200px;
+    text-align: center;
+    
+}
+footer{
+    text-align: center;
+    background-image: conic-gradient(from 177deg at 0% 100%, rgb(84, 71, 63) 0%, rgb(225, 218, 210) 100%);
+    color: white;
+}
+@media screen and  (max-width:600px) {
+  
+    #pioneros{
+      display: block;
+      background-color: white;
+       
+
+     }
+     .bg-img{
+        background-size: 800px;
+    
+     }
+     
+     .card{
+        
+        width:550px;
+    
+     }
+     #video{
+        width: 40%;
+     }
+     footer{
+        margin: 0px auto;
+     }
+    
+  }
+
+    
+
+
+
+
+
